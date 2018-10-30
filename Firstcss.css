@@ -1,0 +1,29 @@
+body {background-color: powderblue;}
+h1   {color: blue;}
+.column {
+    float: left;
+    width: 50%;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#p02 {
+    
+    color: green;
+    font-family: courier;
+    font-size: 160%;
+	border: 2px solid white;
+    padding: 30px;
+}
+#p01    {
+    color: green;
+    font-family: courier;
+    font-size: 160%;
+	border: 2px solid white;
+    padding: 30px;
+
+}

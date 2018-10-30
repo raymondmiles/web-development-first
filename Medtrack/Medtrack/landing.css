@@ -1,0 +1,14 @@
+body {
+  /*this is for styling properties*/
+  margin: 80px;
+  text-align: center;
+}
+
+/* for CLASS use . */
+.loginbutton{
+  background-color: #ff8533; /* COLOR PICKER */
+  border: solid;
+  color: black;
+  /* sizes clockwise starting by TOP */
+  padding : 15px 32px 10px 12px;
+}

@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+      <!--<script>Timerscript.js</script> -->
+	  <script type="text/javascript" src="timer.js"></script>
+	  <script type="text/javascript" href="timer.js"></script>
+
+  <title>Time wasting</title>
+
+<link rel="stylesheet" type="text/css" href="Firstcss.css">
+
+
+</head>
+
+<body>
+
+  <title>Time wasting</title>
+<h3>Lots of silly ways to waste time all in a page</h3>
+
+<h2>Social media</h2>
+
+<p id="p01">
+
+
+        <a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a>
+		</br>
+
+		<a href="https://www.facebook.com/?ref=tn_tnmn" target="_blank">Facebook</a>
+		</br>
+
+		<a href="https://www.youtube.com/" target="_blank">Youtube</a>
+</p>
+
+<h2>Manga and comics</h2>
+<div class="row">
+
+  <div class="column">
+  
+<p id="p02">
+<a href="https://mangarock.com/manga/mrs-serie-71683" target="_blank">Feng Shen Ji</a>
+</br>
+<a href="https://mangarock.com/manga/mrs-serie-143465" target="_blank">Kumo Desu Ga Nani Ka</a></div>
+
+</p>
+  <div class="column">
+<p id="p02">
+
+  <a href="https://mangarock.com/manga/mrs-serie-261966" target="_blank">Tsuyokute New Saga</a>
+  </br>
+<a href="https://mangarock.com/manga/mrs-serie-241688" target="_blank">Shield Hero</a>
+</div>
+</p>
+
+</div>
+
+<h2>Music </h2>
+<p id="p02">
+
+<a href="https://open.spotify.com/browse/feature" target="_blank">Spotify </a>
+</p>
+
+<!-- <script async src="./AddingFeatures/Timerscript.js"></script> -->
+
+
+
+<!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<script>
+// Set the moment we open the page
+var startDate = new Date().getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between the start date and now
+  var time =  now - startDate ;
+
+  // Time calculations for days, hours, minutes and seconds
+  // The Math.floor function rounds the number down to the nearest integer
+  //var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  //The value returned by the getTime method is the number of milliseconds since 1 January 1970 00:00:00.
+  var hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((time % (1000 * 60)) / 1000);  // its the amount that hasnt converted in minutes
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML ="Time wasted : " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  /*if (minutes = 1) {
+  window.alert("sometext");
+
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }*/
+}, 1000);
+</script> 
+
+</body>
+</html>
